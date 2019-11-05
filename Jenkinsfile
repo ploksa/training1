@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage ('syntax') {
             steps {
-               sh apk -y install python
+               apk -y install python
                sh 'python -m py_compile program.py'
                   }
                          }
